@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Bolsonaro Presidente!</title>
+    <title>Cadastro</title>
    </head>
   <body>
    
@@ -16,7 +16,7 @@
     <div class="container">
 		<section>
 		<h1 class="bg-dark text-white">Cadastrar Funcionário</h1><br>
-		<form method="POST" action="#"> 
+		<form method="POST" action="insert.php"> 
 
 		<div class="form-group">
      		<label for="cpf">CPF: </label>
