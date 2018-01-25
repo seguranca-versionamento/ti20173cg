@@ -29,9 +29,9 @@
 <hr/>
 <form >
   <div class="form-group ">
-    <label for="exampleInputEmail1">CPF</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Digite o seu CPF">
-    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilhamos as suas informações com ninguém.</small>
+    <label for="exampleInputCPF1">CPF</label>
+    <input type="CPF" class="form-control" id="exampleInputCPF1" aria-describedby="cpfHelp" placeholder=" Digite o seu CPF">
+    <small id="cpfHelp" class="form-text text-muted">Nós nunca compartilhamos as suas informações com ninguém.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Senha</label>
