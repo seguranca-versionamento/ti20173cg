@@ -29,10 +29,13 @@
   session_start();
   
   $cargo = $_SESSION['cargo'];
-
+  $nome = $_SESSION['nome'];
+  
+  echo "$nome";
   echo "$cargo";
 
-  if($_SESSION['cargo'] == 'rh'){
+  
+  if($_SESSION['cargo'] == 'Setor Rh'){
     
     echo '
 
@@ -63,7 +66,7 @@
     <a class="nav-link active" name="contra" href="contracheque.php" style="color: #000;">Contracheque</a>
   </li>
 
-</ul>";
+</ul>
 
 ';
 
@@ -83,7 +86,7 @@
     <a class="nav-link active" name="contra" href="contracheque.php" style="color: #000;">Contracheque</a>
   </li>
 
-</ul>";
+</ul>
 
   ';
 
