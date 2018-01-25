@@ -27,18 +27,16 @@
 <br/>
 <h3 style="font-family: arial;">Faça o seu login</h3>
 <hr/>
-<form >
+<form method="POST" action="login.php" >
   <div class="form-group ">
-    <label for="exampleInputCPF1">CPF</label>
-    <input type="CPF" class="form-control" id="exampleInputCPF1" aria-describedby="cpfHelp" placeholder=" Digite o seu CPF">
-    <small id="cpfHelp" class="form-text text-muted">Nós nunca compartilhamos as suas informações com ninguém.</small>
+    <label for="cpf">CPF</label>
+    <input type="text" class="form-control" name="cpf" aria-describedby="emailHelp" placeholder=" Digite o seu CPF">
+    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilhamos as suas informações com ninguém.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Digite a sua senha">
+    <label for="senha">Senha</label>
+    <input type="password" class="form-control" name="senha" placeholder=" Digite a sua senha">
   </div>
-
- <p></p>
   <button style="" type="submit" class="btn btn-dark btn-outline">Entrar</button>
  
 </form>
