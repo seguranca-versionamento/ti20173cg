@@ -37,7 +37,7 @@
     <label for="exampleInputPassword1">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Digite a sua senha">
   </div>
- Não tem uma conta?<a href=""> Cadastre-se!</a>
+
  <p></p>
   <button style="" type="submit" class="btn btn-dark btn-outline">Entrar</button>
  
