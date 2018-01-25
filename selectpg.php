@@ -31,6 +31,7 @@ if($result->num_rows>0){
 	while($row = $result->fetch_assoc()){
 		echo $row['nome']."<br/>";
 		echo $row['salario']."<br/>";
+    $salario = $row['salario'];
 	}
 }
 else{
@@ -40,13 +41,13 @@ $conn->close();
 ?>
 
 
-<form method="POST" action="#">
+<form method="POST" action="insertpg.php">
 
     <div class="form-group">
       <label for="vt">Vale Transporte: </label>
       <select name="vt" id="vt" class="form-control form-control-lg">
-        <option value="">Sim</option>
-        <option value="">Não</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
       </select>
     </div>
 
@@ -60,7 +61,7 @@ $conn->close();
       <input type="text" name="ano" class="form-control form-control-lg" />
     </div>
       <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-      
+      <input type="hidden" name="salario" value="<?php echo $salario; ?>">
     </form>
 
 
