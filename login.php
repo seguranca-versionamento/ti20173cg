@@ -19,7 +19,8 @@ if($result->num_rows>0){
       	$_SESSION['cargo'] = $cargo;
       $_SESSION['nome'] = $nome;
     echo "$nome conectado com sucesso!";
-	HEADER('refresh: 3, perfil.php');
+	
+	HEADER('location: perfil.php');
 
 	}
 }

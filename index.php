@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 
 <meta name="viewport" content="width=device-width" />
-	<title>login RH</title>
+	<title>Login RH</title>
 	
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="estilo/estilo.css" />

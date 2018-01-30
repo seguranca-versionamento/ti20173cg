@@ -31,7 +31,7 @@
   $cargo = $_SESSION['cargo'];
   $nome = $_SESSION['nome'];
   
-  echo "$nome";
+  echo "$nome ";
   echo "$cargo";
 
   
@@ -58,12 +58,11 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link active" name="sair" href="sair.php" style="color: #000;">Desconectar</a>
-  </li>
-
-
-  <li class="nav-item">
     <a class="nav-link active" name="contra" href="contracheque.php" style="color: #000;">Contracheque</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link active" name="sair" href="sair.php" style="color: #000;">Desconectar</a>
   </li>
 
 </ul>
@@ -76,16 +75,17 @@
     echo '
 
   <ul class="nav justify-content-center">
+  
+  <li class="nav-item">
+    <a class="nav-link active" name="contra" href="contracheque.php" style="color: #000;">Contracheque</a>
+  </li>
 
   <li class="nav-item">
     <a class="nav-link active" name="sair" href="sair.php" style="color: #000;">Desconectar</a>
   </li>
 
 
-  <li class="nav-item">
-    <a class="nav-link active" name="contra" href="contracheque.php" style="color: #000;">Contracheque</a>
-  </li>
-
+  
 </ul>
 
   ';
@@ -98,6 +98,7 @@
 </section>
 
 <footer>
+
 </footer>
 
 
