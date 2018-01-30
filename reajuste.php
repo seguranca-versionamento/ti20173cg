@@ -32,10 +32,10 @@
 <h2>Acordo coletivo</h2>
 
 <h5>Valor do reajuste (%)</h5>
-	<form method="post" action="aula.php">
+	<form method="post" action="update.php">
 		<input type="text" name="reajuste" placeholder="" />
 						
-		<button class="btn btn-outline-primary my-2 my-sm-0">Reajustar</button>
+		<button class="btn btn-outline-dark my-2 my-sm-0">Reajustar</button>
 
 	</form>
 
