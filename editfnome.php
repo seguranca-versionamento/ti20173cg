@@ -36,9 +36,17 @@ $result = $conn->query($sql);
     <div class="container">
 		<section>
 		<h1>Atualize o cadastro</h1><hr />
+
+
 		<form method="POST" action="updateeditf.php">
 
-		<div class="form-group">
+<div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Matrícula</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" name="id" value="<?php echo $id; ?>">
+    </div>
+  </div>
+    <div class="form-group">
       <label > Nome</label>
       <input type="text" name="nome" value="<?php echo $nome; ?>"  class="form-control form-control-lg"  />
     </div>
