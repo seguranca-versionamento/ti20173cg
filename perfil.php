@@ -35,7 +35,7 @@
   echo "$cargo";
 
   
-  if($_SESSION['cargo'] == 'Setor Rh'){
+  if($_SESSION['cargo'] == 'rh'){
     
     echo '
 

@@ -4,7 +4,7 @@ session_destroy();
 
 echo "desconectado com sucesso";
 
-header("Location: index.html");
+header("Location: index.php");
 
 
 
