@@ -13,7 +13,11 @@
   <body>
   <header class="container">
     <h1>Pagamento</h1><hr />
-
+    
+    <p>&nbsp;</p>
+    <button type="button" class="btn btn-outline-dark"><a href="perfil.php" style="color: #000;">Voltar</a></button>
+    <p>&nbsp;</p>
+    
     </header>
 
     <div class="container">

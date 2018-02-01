@@ -19,6 +19,9 @@
     <div class="container">
     <section>
 
+<p>&nbsp;</p>
+<button type="button" class="btn btn-outline-dark"><a href="perfil.php" style="color: #000;">Voltar</a></button>
+<p>&nbsp;</p>
 
 <?php
 include "conexao.php";
@@ -39,7 +42,6 @@ else{
 }
 $conn->close();
 ?>
-
 
 <form method="POST" action="insertpg.php">
 

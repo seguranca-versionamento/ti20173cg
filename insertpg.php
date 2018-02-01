@@ -11,7 +11,14 @@
     <title>Pagamentos</title>
   </head>
 <body>
-<header></header>
+<header>
+
+<div class = "container">
+<p>&nbsp;</p>
+<button type="button" class="btn btn-outline-dark"><a href="perfil.php" style="color: #000;">Voltar</a></button></header>
+<p>&nbsp;</p>
+</div>
+4+
 <section>
 
 <?php
@@ -33,7 +40,7 @@ if($conn->query($sql) === TRUE){
 		</br>
 		<p>&nbsp;</p>
 		<div class = "container">
-		<center><h2>Pagamento Inserido com sucesso!</h2></center>
+		<center><h1 class = "display-4">Pagamento Inserido com sucesso!</h1></center>
 		<hr/>
 		</div>
 		';
@@ -47,6 +54,7 @@ else{
 
 
 ?>
+
 </section>
 <footer></footer>
 
