@@ -12,7 +12,9 @@ $result = $conn->query($sql);
     $demissao = $row['demissao'];
     $telefone = $row['telefone'];
     $endereco = $row['endereco'];
-  }
+   
+
+}
 
 ?>
 
@@ -41,13 +43,13 @@ $result = $conn->query($sql);
 		<form method="POST" action="updateeditf.php">
 
 <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Matrícula</label>
+    <label for="staticEmail" class="col-sm-2 col-form-label"> <h3>Matrícula -  </h3></label>
     <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" name="id" value="<?php echo $id; ?>">
+     <h5> <input type="text" readonly class="form-control-plaintext" id="staticEmail" name="id" value="<?php echo $id; ?>"></h5>
     </div>
   </div>
     <div class="form-group">
-      <label > Nome</label>
+      <label > Nome   </label>
       <input type="text" name="nome" value="<?php echo $nome; ?>"  class="form-control form-control-lg"  />
     </div>
 
@@ -56,10 +58,51 @@ $result = $conn->query($sql);
 			<input type="text" name="cargo" value="<?php echo $cargo; ?>" class="form-control form-control-lg" />     
 		</div>
 
+
+
+
+
+
+
+
+
+
+
+
     <div class="form-group">
       <label> Sexo </label>
-      <input type="text" name="sexo" value="<?php echo $sexo; ?>" class="form-control form-control-lg" />
+
+<select  type="text" name="sexo"  class="form-control form-control-lg" />
+
+<option value ="m" <?php if ($sexo == "m") {
+  echo "selected";
+}?> > Masculino</option>
+
+
+<option value ="f" <?php if ($sexo == "f") {
+  echo "selected";
+}
+?>> Feminino</option>
+
+</select>
+
     </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div class="form-group">
       <label> Salario </label>
