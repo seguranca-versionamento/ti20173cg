@@ -6,7 +6,7 @@ $reajuste = $_POST['reajuste'];
 
 $reajuste = ($reajuste/100)+1;
 
-$sql = "UPDATE funcionarios SET salario= $reajuste * salario";
+$sql = "UPDATE funcionario SET salario= $reajuste * salario";
 
 if ($conn->query($sql) === TRUE) {
 	echo "Reajuste atualizado com sucesso";

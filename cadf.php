@@ -16,6 +16,7 @@
     <div class="container">
 		<section>
 		<h1 class="bg-dark text-white">Cadastrar Funcionário</h1><br>
+		<hr/>
 		<form method="POST" action="insert.php"> 
 
 		<div class="form-group">
@@ -51,8 +52,8 @@
 		<div class="form-group">
 			<label for="sexo">Sexo: </label>
 			<select name="sexo" name="sexo" class="form-control form-control-lg">
-				<option value="">Masculino</option>
-				<option value="">Feminino</option>
+				<option value="m">Masculino</option>
+				<option value="f">Feminino</option>
 			</select>
 		</div>
 
@@ -80,11 +81,12 @@
 			<input type="text" name="endereco" class="form-control form-control-lg" />
 		</div>
 
-		<button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+		<button type="submit" class="btn btn-dark btn-lg">Enviar</button><hr/><a class="btn btn-dark btn-lg" href="index.php" role="button">Voltar</a>
 			
 		</form>
 		</section>
 	</div>
+
 
 
 	 <!-- Optional JavaScript -->
