@@ -35,7 +35,7 @@
 	<form method="post" action="update.php">
 		<input type="text" name="reajuste" placeholder="" />
 						
-		<button class="btn btn-outline-dark my-2 my-sm-0">Reajustar</button>
+		<button class="btn btn-outline-dark my-2 my-sm-0">Reajustar</button><hr/><a class="btn btn-dark" href="index.php" role="button">Voltar</a>
 
 	</form>
 
