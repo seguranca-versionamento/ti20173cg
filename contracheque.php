@@ -18,51 +18,45 @@
 
     <div class="container">
     <section>
-
+<form method="POST" action="dados_contracheque.php">
 
 <?php
 include "conexao.php";
-
-$sql = "SELECT * FROM pagamento";
+session_start();
+$cpf = $_SESSION['cpf'];
+$sql = "SELECT * FROM pagamento WHERE cpf = '$cpf'";
 $result = $conn->query($sql);
 
-if($result->num_rows>0){
-  while($row = $result->fetch_assoc()){
-    echo "Seu salário é de: ".$row['salario']."<br/>";
-    echo "Possui vale transporte: ".$row['vt']."<br/>";
-    echo "Mês Referente: ".$row['mes']."<br/>";
-    echo "Ano Referente: ".$row['ano']."<br/>";
-  }
-}
-else{
-  HEADER('location: pagamento.php');
-}
-$conn->close();
+
+
 ?>
 
 
-<form method="POST" action="insertpg.php">
 <br>
 <h3>Selecione o Mês e o Ano Referente</h3>
     <div class="form-group">
       <label for="mes">Mês </label>
       <select name="mes" id="mes" class="form-control form-control-lg">
-        <option value="<?php echo $salario; ?>"><?php $row['mes']; ?></option>
+      <?php
+      if($result->num_rows>0){
+  while($row = $result->fetch_assoc()){
+    ?>
+        <option value="<?php echo $row['idpag']; ?>"><?php echo $row['mes']; ?> <?php echo $row['ano'];?></option>
+<?php } ?>
       </select>
     </div>
 
-     <div class="form-group">
-      <label for="vt">Ano </label>
-      <select name="vt" id="vt" class="form-control form-control-lg">
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-    </div>
-      <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-      <input type="hidden" name="salario" value="<?php echo $salario; ?>">
-    </form>
+<?php
 
-
+  
+}
+else{
+  HEADER('location: perfil.php');
+}
+$conn->close();
+?>
+<button class="btn btn-dark">Enviar</button>
+</form>
 </section>
   </div>
 

@@ -55,7 +55,8 @@ $conn->close();
 
     <div class="form-group">
       <label for="mes">Mês: </label>
-      <input type="text" name="mes" class="form-control form-control-lg" />
+      <input type="text" name="mes" class="form-control form-control-lg" />,
+      <input type="hidden" name="cpf" value="<?php  echo $cpf ?>">
     </div>
 
      <div class="form-group">

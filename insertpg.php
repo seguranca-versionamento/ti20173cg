@@ -26,7 +26,7 @@ include "conexao.php";
 
 session_start();
 
-$cpf = $_SESSION['cpf'];
+$cpf = $_POST['cpf'];
 $nome = $_SESSION['nome'];
 $salario = $_POST['salario'];
 $vt = $_POST['vt'];
